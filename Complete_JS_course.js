@@ -1,6 +1,5 @@
 /******************** IIFE & Block *******************/
 
-/*
 //ES6
 {
     const a = 25;
@@ -18,11 +17,11 @@ console.log(c) //Output 50
 })();
 console.log(c) //Output Error
 
-*/
+
 
 /******************** Strings in ES6 *******************/
 
-/*
+
 let firstName = "John";
 let lastName = "Smith";
 const yearOfBirth = 1990;
@@ -42,11 +41,11 @@ console.log(n.endsWith("th"));
 console.log(n.includes("th"));
 console.log(`OH!${firstName} `.repeat(10));
 
-*/
+
 
 
 /******************** Arrow Function in JS *******************/
-/*
+
 const years = [1990,1995,2001,1987];
 
 //ES5 
@@ -69,10 +68,10 @@ ages6 = years.map((el, i) =>{
 
 console.log(ages5)
 console.log(ages6)
-*/
+
 
 /////////////////////////// Advance Uses of Arrow Function /////////////////////////
-/*
+
 //ES5
 const box5 = {
     color: "green",
@@ -134,12 +133,12 @@ Person.prototype.myFriends5 = function(friends) {
 }
 
 new Person("John").myFriends5(friends);
-*/
+
 
 
 /******************** Destructuring *******************/
 
-/*
+
 //ES5
 var john = ["John", 23];
 // var name = john[0];
@@ -175,11 +174,11 @@ const [age2, retirement] = calcAgeRetirement(1980);
 
 console.log(age);
 console.log(retirement);
-*/
+
 
 /******************** Array *******************/
 
-/*
+
 const boxes = document.querySelectorAll(".box");
 
 //ES5
@@ -226,12 +225,12 @@ console.log(full.indexOf(true));
 //ES6
 console.log(ages.findIndex(el => el >= 21));
 console.log(ages.find(el => el >= 21));
-*/
+
 
 
 /******************** Spread Operator *******************/
 
-/*
+
 var markFamily = ["John", "Mark", "Lily"];
 var maryFamily = ["Mary", "Bob", "Jane"];
 
@@ -246,12 +245,12 @@ all.forEach(el => {
     el.style.color = "purple"
 });
 console.log(box2);
-*/
+
 
 /******************** Rest Parameters *******************/
 
 //ES5
-/*
+
 function isFullAge() {
     // console.log(arguments);
     var argsArr = Array.prototype.slice.call(arguments);
@@ -287,11 +286,11 @@ function isFullAge6(limit, ...years) {
 years.forEach(cur => console.log((2020 - cur) > limit))
 }
 isFullAge6(19 ,2002,1985,2005,2000);
-*/
+
 
 
 /******************** Default Parameters *******************/
-/*
+
 ////////////////////////// ES5 ///////////////////////
 function SmithFamily(firstName, yearOfBirth, lastName, nationality) {
     lastName === undefined ? lastName = "Noyimpu" : lastName = lastName;
@@ -318,13 +317,11 @@ const john = new SmithFamily("John", 1990);
 const emily = new SmithFamily("John", 1990, "Princeeeeeeeeee", "Spanish");
 console.log(john);
 console.log(emily);
-*/
-
 
 
 
 /********************************** Maps ******************************/
-/*
+
 const question = new Map();
 question.set('question', 'What is the best job in the world???');
 question.set(1, 'Teacher');
@@ -359,13 +356,13 @@ for (let [key, value] of question.entries()) {
 const ans = parseInt(prompt("Choose the correct answer"));
 
 console.log(question.get(ans === question.get('correct')));
-*/
+
 
 
 /******************************* Class ******************************/
 
 //ES5
-/*
+
 var Person5 = function(name, yearOfBirth, job) {
     this.name = name;
     this.yearOfBirth =  yearOfBirth;
@@ -399,11 +396,11 @@ class Person6 {
 const john2 = new Person6("John", 2000, "Teacher");
 console.log(john2);
 john2.calculateAge()
-*/
+
 
 /******************************* Sub classes ******************************/
 
-/*
+
 var Person5 = function(name, yearOfBirth, job) {
     this.name = name;
     this.yearOfBirth =  yearOfBirth;
@@ -465,7 +462,7 @@ const mark = new Athletes6('Mark', 2000, 'sprinter', 5, 8);
 mark.wonMedals();
 mark.calculateAge();
 console.log(mark);
-*/
+
 
 
 
